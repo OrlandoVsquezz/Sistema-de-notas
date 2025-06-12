@@ -1,0 +1,10 @@
+C:\Users\Estudiante\Desktop\Calculo de romedios\bin\Debug\Calculo de romedios.exe.config
+C:\Users\Estudiante\Desktop\Calculo de romedios\bin\Debug\Calculo de romedios.exe
+C:\Users\Estudiante\Desktop\Calculo de romedios\bin\Debug\Calculo de romedios.pdb
+C:\Users\Estudiante\Desktop\Calculo de romedios\obj\Debug\Calculo de romedios.csproj.AssemblyReference.cache
+C:\Users\Estudiante\Desktop\Calculo de romedios\obj\Debug\Calculo_de_romedios.fmrCalculoPromedios.resources
+C:\Users\Estudiante\Desktop\Calculo de romedios\obj\Debug\Calculo_de_romedios.Properties.Resources.resources
+C:\Users\Estudiante\Desktop\Calculo de romedios\obj\Debug\Calculo de romedios.csproj.GenerateResource.cache
+C:\Users\Estudiante\Desktop\Calculo de romedios\obj\Debug\Calculo de romedios.csproj.CoreCompileInputs.cache
+C:\Users\Estudiante\Desktop\Calculo de romedios\obj\Debug\Calculo de romedios.exe
+C:\Users\Estudiante\Desktop\Calculo de romedios\obj\Debug\Calculo de romedios.pdb

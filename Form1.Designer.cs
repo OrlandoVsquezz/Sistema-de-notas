@@ -31,26 +31,26 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmrCalculoPromedios));
             this.gbRegistroNotas = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblError = new System.Windows.Forms.Label();
+            this.txtNota2 = new System.Windows.Forms.TextBox();
+            this.txtNota1 = new System.Windows.Forms.TextBox();
+            this.txtNota3 = new System.Windows.Forms.TextBox();
             this.lblNotaTres = new System.Windows.Forms.Label();
             this.lblNotaDos = new System.Windows.Forms.Label();
             this.lblNotaUno = new System.Windows.Forms.Label();
             this.gbPromedio = new System.Windows.Forms.GroupBox();
-            this.gbAcciones = new System.Windows.Forms.GroupBox();
-            this.txtNota3 = new System.Windows.Forms.TextBox();
-            this.txtNota1 = new System.Windows.Forms.TextBox();
-            this.txtNota2 = new System.Windows.Forms.TextBox();
-            this.btmSalir = new System.Windows.Forms.Button();
+            this.txtPromedio = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.lblError = new System.Windows.Forms.Label();
+            this.gbAcciones = new System.Windows.Forms.GroupBox();
+            this.btmSalir = new System.Windows.Forms.Button();
             this.btnAgregarPromedio = new System.Windows.Forms.Button();
             this.btnNuevoRegistro = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tlpAyuda = new System.Windows.Forms.ToolTip(this.components);
             this.gbRegistroNotas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gbPromedio.SuspendLayout();
             this.gbAcciones.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gbRegistroNotas
@@ -71,6 +71,48 @@
             this.gbRegistroNotas.TabStop = false;
             this.gbRegistroNotas.Text = "Registro de notas";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Calculo_de_romedios.Properties.Resources.icons8_usuario_100;
+            this.pictureBox1.Location = new System.Drawing.Point(598, 73);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.ForeColor = System.Drawing.Color.Red;
+            this.lblError.Location = new System.Drawing.Point(105, 330);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(64, 25);
+            this.lblError.TabIndex = 6;
+            this.lblError.Text = "Error";
+            // 
+            // txtNota2
+            // 
+            this.txtNota2.Location = new System.Drawing.Point(305, 171);
+            this.txtNota2.Name = "txtNota2";
+            this.txtNota2.Size = new System.Drawing.Size(240, 31);
+            this.txtNota2.TabIndex = 5;
+            this.tlpAyuda.SetToolTip(this.txtNota2, "Ingresa valores entre 0 y 10");            // 
+            // txtNota1
+            // 
+            this.txtNota1.Location = new System.Drawing.Point(305, 73);
+            this.txtNota1.Name = "txtNota1";
+            this.txtNota1.Size = new System.Drawing.Size(240, 31);
+            this.txtNota1.TabIndex = 4;
+            this.tlpAyuda.SetToolTip(this.txtNota1, "Ingresa valores entre 0 y 10");
+            // 
+            // txtNota3
+            // 
+            this.txtNota3.Location = new System.Drawing.Point(305, 266);
+            this.txtNota3.Name = "txtNota3";
+            this.txtNota3.Size = new System.Drawing.Size(240, 31);
+            this.txtNota3.TabIndex = 3;
+            this.tlpAyuda.SetToolTip(this.txtNota3, "Ingresa valores entre 0 y 10");            // 
             // lblNotaTres
             // 
             this.lblNotaTres.AutoSize = true;
@@ -100,7 +142,7 @@
             // 
             // gbPromedio
             // 
-            this.gbPromedio.Controls.Add(this.textBox4);
+            this.gbPromedio.Controls.Add(this.txtPromedio);
             this.gbPromedio.Controls.Add(this.label4);
             this.gbPromedio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbPromedio.Location = new System.Drawing.Point(51, 478);
@@ -109,6 +151,24 @@
             this.gbPromedio.TabIndex = 1;
             this.gbPromedio.TabStop = false;
             this.gbPromedio.Text = "Promedio";
+            // 
+            // txtPromedio
+            // 
+            this.txtPromedio.AcceptsReturn = true;
+            this.txtPromedio.Location = new System.Drawing.Point(305, 75);
+            this.txtPromedio.Name = "txtPromedio";
+            this.txtPromedio.ReadOnly = true;
+            this.txtPromedio.Size = new System.Drawing.Size(240, 31);
+            this.txtPromedio.TabIndex = 6;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(50, 81);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(213, 25);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Promedio Obtenido";
             // 
             // gbAcciones
             // 
@@ -123,30 +183,6 @@
             this.gbAcciones.TabStop = false;
             this.gbAcciones.Text = "Acciones";
             // 
-            // txtNota3
-            // 
-            this.txtNota3.Location = new System.Drawing.Point(305, 266);
-            this.txtNota3.Name = "txtNota3";
-            this.txtNota3.Size = new System.Drawing.Size(240, 31);
-            this.txtNota3.TabIndex = 3;
-            this.tlpAyuda.SetToolTip(this.txtNota3, "Ingresa valores entre 0 y 10");
-            // 
-            // txtNota1
-            // 
-            this.txtNota1.Location = new System.Drawing.Point(305, 73);
-            this.txtNota1.Name = "txtNota1";
-            this.txtNota1.Size = new System.Drawing.Size(240, 31);
-            this.txtNota1.TabIndex = 4;
-            this.tlpAyuda.SetToolTip(this.txtNota1, "Ingresa valores entre 0 y 10");
-            // 
-            // txtNota2
-            // 
-            this.txtNota2.Location = new System.Drawing.Point(305, 171);
-            this.txtNota2.Name = "txtNota2";
-            this.txtNota2.Size = new System.Drawing.Size(240, 31);
-            this.txtNota2.TabIndex = 5;
-            this.tlpAyuda.SetToolTip(this.txtNota2, "Ingresa valores entre 0 y 10");
-            // 
             // btmSalir
             // 
             this.btmSalir.Image = global::Calculo_de_romedios.Properties.Resources.icons8_cerrar_ventana_48;
@@ -157,33 +193,7 @@
             this.btmSalir.TabIndex = 2;
             this.btmSalir.Text = "Salir";
             this.btmSalir.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(50, 81);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(213, 25);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Promedio Obtenido";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(305, 75);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(240, 31);
-            this.textBox4.TabIndex = 6;
-            // 
-            // lblError
-            // 
-            this.lblError.AutoSize = true;
-            this.lblError.ForeColor = System.Drawing.Color.Red;
-            this.lblError.Location = new System.Drawing.Point(105, 330);
-            this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(64, 25);
-            this.lblError.TabIndex = 6;
-            this.lblError.Text = "Error";
+            this.btmSalir.Click += new System.EventHandler(this.btmSalir_Click);
             // 
             // btnAgregarPromedio
             // 
@@ -196,6 +206,7 @@
             this.btnAgregarPromedio.Text = "Agregar promedio";
             this.btnAgregarPromedio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAgregarPromedio.UseVisualStyleBackColor = true;
+            this.btnAgregarPromedio.Click += new System.EventHandler(this.btnAgregarPromedio_Click);
             // 
             // btnNuevoRegistro
             // 
@@ -208,16 +219,7 @@
             this.btnNuevoRegistro.Text = "Nuevo registro";
             this.btnNuevoRegistro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNuevoRegistro.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Calculo_de_romedios.Properties.Resources.icons8_usuario_100;
-            this.pictureBox1.Location = new System.Drawing.Point(598, 73);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.btnNuevoRegistro.Click += new System.EventHandler(this.btnNuevoRegistro_Click);
             // 
             // tlpAyuda
             // 
@@ -229,7 +231,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1151, 773);
+            this.ClientSize = new System.Drawing.Size(1127, 669);
             this.Controls.Add(this.gbAcciones);
             this.Controls.Add(this.gbPromedio);
             this.Controls.Add(this.gbRegistroNotas);
@@ -238,10 +240,10 @@
             this.Text = "Sistema de notas ITR";
             this.gbRegistroNotas.ResumeLayout(false);
             this.gbRegistroNotas.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gbPromedio.ResumeLayout(false);
             this.gbPromedio.PerformLayout();
             this.gbAcciones.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -260,7 +262,7 @@
         private System.Windows.Forms.Button btmSalir;
         private System.Windows.Forms.Button btnAgregarPromedio;
         private System.Windows.Forms.Button btnNuevoRegistro;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtPromedio;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.PictureBox pictureBox1;
